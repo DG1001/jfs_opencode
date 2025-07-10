@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SnapPic - Upload</title>
+    <link rel="manifest" href="/static/manifest.json">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>SnapPic</h1>
+        <form id="upload-form" enctype="multipart/form-data">
+            <input type="file" id="image-input" name="image" accept="image/jpeg,image/png,image/webp" capture="environment">
+            <label for="image-input" class="file-label">
+                📸 Foto aufnehmen oder auswählen
+            </label>
+            <textarea id="comment" name="comment" maxlength="100" placeholder="Kommentar (max. 100 Zeichen)"></textarea>
+            <button type="submit">Hochladen</button>
+        </form>
+        <div id="upload-status"></div>
+        <a href="/gallery" class="gallery-link">Zur Galerie</a>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+</html>
