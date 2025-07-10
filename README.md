@@ -74,3 +74,10 @@ Feel free to open issues or submit pull requests.
 ## License
 
 MIT License
+
+---
+
+## Project Generation
+
+- Created with [opencode](https://opencode.ai) v0.2.21
+- AI Assistant: Claude Haiku 3.5
